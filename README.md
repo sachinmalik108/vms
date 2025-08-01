@@ -4,33 +4,38 @@ A modern web-based video management system built with FastAPI backend and React 
 
 ##  Features
 
-- **Multi-Camera Support**: Manage up to 10 camera streams
-- **Real-time Monitoring**: Live video stream viewing
-- **Alert System**: Defect detection and alert management
-- **AI Integration**: AI-powered video analysis and defect detection
-- **Modern UI**: Responsive Bootstrap-based interface
-- **RESTful API**: FastAPI backend with comprehensive endpoints
+- **Multi-Camera Support**: Manage up to 10 camera streams with real-time monitoring
+- **Video Streaming**: Direct video file streaming with proper MIME types
+- **Alert System**: Defect detection and alert management with confidence scoring
+- **AI Integration**: AI-powered video analysis with asset and defect detection
+- **Model Summaries**: Real-time AI model performance monitoring
+- **Modern UI**: Responsive Bootstrap-based interface with TypeScript
+- **RESTful API**: FastAPI backend with comprehensive endpoints and auto-generated docs
+- **CORS Support**: Cross-origin resource sharing for frontend integration
 
 
 ##  Technology Stack
 
 ### Backend
-- **FastAPI**: Modern Python web framework
-- **OpenCV**: Computer vision and video processing
-- **NumPy**: Numerical computing
-- **Uvicorn**: ASGI server
+- **FastAPI 0.116.1**: Modern Python web framework with automatic API documentation
+- **OpenCV 4.9.0.80**: Computer vision and video processing
+- **NumPy 1.26.4**: Numerical computing for AI operations
+- **Uvicorn 0.35.0**: ASGI server for high-performance async operations
+- **Pydantic 2.11.7**: Data validation and settings management
+- **Starlette 0.47.2**: ASGI toolkit for building async web services
 
 ### Frontend
-- **React 18**: Modern React with hooks
-- **TypeScript**: Type-safe JavaScript
-- **Bootstrap 5**: Responsive UI framework
-- **React Scripts**: Development and build tools
+- **React 18**: Modern React with hooks and concurrent features
+- **TypeScript 4.4.2**: Type-safe JavaScript for better development experience
+- **Bootstrap 5.3.7**: Responsive UI framework with modern components
+- **React Scripts 5.0.1**: Development and build tools
 
 ##  Prerequisites
 
-- Python 3.8+
-- Node.js 16+
+- Python 3.8+ (3.10+ recommended)
+- Node.js 16+ (18+ recommended)
 - npm or yarn
+- Git for version control
 
 ##  Quick Start
 
@@ -98,7 +103,7 @@ Once the backend is running, you can access:
 3. **Monitor Alerts**: Check the alerts panel for any detected issues
 4. **View AI Analysis**: Access model summaries for AI-powered insights
 
-## 🔧 Configuration
+##  Configuration
 
 ### Backend Configuration
 - Video files are stored in `backend/app/videos/`
@@ -109,7 +114,7 @@ Once the backend is running, you can access:
 - API proxy is configured to `http://127.0.0.1:8000`
 - Bootstrap is included for styling
 
-## 🧪 Development
+##  Development
 
 ### Backend Development
 ```bash
