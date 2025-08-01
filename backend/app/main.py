@@ -26,15 +26,16 @@ VIDEOS_DIR = os.path.join(BASE_DIR, "videos")
 videos = [
     {"id": 1, "name": "Camera 1", "filename": "cam1.mp4", "status": "active"},
     {"id": 2, "name": "Camera 2", "filename": "cam2.mp4", "status": "active"},
-    {"id": 3, "name": "Camera 3", "filename": "cam3.mp4", "status": "active"},
-    {"id": 4, "name": "Camera 4", "filename": "cam4.mp4", "status": "active"},
-    {"id": 5, "name": "Camera 5", "filename": "cam5.mp4", "status": "active"},
-    {"id": 6, "name": "Camera 6", "filename": "cam6.mp4", "status": "active"},
+    {"id": 3, "name": "Camera 3", "filename": "cam1.mp4", "status": "active"},
+    {"id": 4, "name": "Camera 4", "filename": "cam2.mp4", "status": "active"},
+    {"id": 5, "name": "Camera 5", "filename": "cam1.mp4", "status": "active"},
+    {"id": 6, "name": "Camera 6", "filename": "cam2.mp4", "status": "active"},
 ]
 
 @app.get("/api/videos/")
 def get_videos():
     return videos
+
 
 @app.get("/api/videos/{video_id}/stream")
 def stream_video(video_id: int):
